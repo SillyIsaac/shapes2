@@ -183,3 +183,27 @@ double Square::OverallDimension(void)
 
     return s;
 }
+
+
+Square Square::operator+(const Square& square2)
+{
+   
+    return;
+}
+
+Square Square::operator*(const Square& sqaure2)
+{
+    
+    return;
+}
+
+Square Square::operator=(const Square& square2)
+{
+    
+    return *this;
+}
+
+Square Square::operator==(const Square& square2)
+{
+    
+}

@@ -46,4 +46,10 @@ public:
     virtual double Area(void);
     virtual double OverallDimension(void);
     void Show(void);
+
+    Square operator+(const Square& circle2);
+    Square operator*(const Square& circle2);
+    Square operator=(const Square& circle2);
+    Square operator==(const Square& circle2);
+
 };

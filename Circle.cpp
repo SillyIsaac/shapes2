@@ -185,15 +185,25 @@ Circle Circle::operator+(const Circle& circle2)
 
 Circle Circle::operator*(const Circle& circle2)
 {
-
+	Circle multiplcation(*this);
+	//multiplcation.GetColour() = circle2.GetColour();
+	return multiplcation;
 }
 
-Circle Circle::operator=(const Circle& object)
+Circle Circle::operator=(const Circle& circle2)
 {
+	if (this == &circle2)
+	{
+		return *this;
+	}
+	SetColour(GetColour());
+	radius = circle2.radius;
 
+
+	return *this;
 }
 
-Circle Circle::operator==(const Circle& object)
+Circle Circle::operator==(const Circle& circle2)
 {
-
+	Circle equalsEquals(GetColour(), radius + circle2.radius);
 }

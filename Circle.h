@@ -48,9 +48,8 @@ public:
     virtual double Perimeter(void);
 
 
-    // Overload the "+" operation -- used to add 2 3D points together
-    Circle operator+(const Circle& op2);
-
-    // Overload the "*" operation -- used to add 2 3D points together
-    Circle operator*(const Circle& op2);
+    Circle operator+(const Circle& circle2);
+    Circle operator*(const Circle& circle2);
+    Circle operator=(const Circle& circle2);
+    Circle operator==(const Circle& circle2);
 };

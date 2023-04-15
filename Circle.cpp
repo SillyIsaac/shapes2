@@ -177,12 +177,13 @@ double Circle::Area(void)
 	return tempArea;
 }
 
-Circle Circle::operator+(const Circle& object)
+Circle Circle::operator+(const Circle& circle2)
 {
-
+	Circle addition(GetColour(), radius + circle2.radius);
+	return addition;
 }
 
-Circle Circle::operator*(const Circle& object)
+Circle Circle::operator*(const Circle& circle2)
 {
 
 }
